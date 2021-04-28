@@ -23,5 +23,8 @@
     "webpack": "^5.35.1",
     "webpack-bundle-analyzer": "^4.4.1",
     "webpack-cli": "^4.6.0"
+  },
+  "resolutions": {
+    "bn.js": "5.2.0"
   }
 }
