@@ -25,6 +25,7 @@
     "webpack-cli": "^4.6.0"
   },
   "resolutions": {
-    "bn.js": "5.2.0"
+    "bn.js": "5.2.0",
+    "@pedrouid/iso-crypto": "https://github.com/jmrossy/iso-crypto#f4b764e"
   }
 }

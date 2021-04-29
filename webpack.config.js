@@ -8,6 +8,10 @@ const config = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
   },
+  target: 'web',
+  externals: {
+    'crypto': 'crypto',
+  },
   plugins: [
     new BundleAnalyzerPlugin({
       analyzerMode: 'static',
@@ -15,10 +19,10 @@ const config = {
     })
   ],
   resolve: {
-    fallback: { 
-      "crypto": require.resolve("crypto-browserify"),
-      "stream": require.resolve("stream-browserify")
-    }
+    // fallback: { 
+    //   "crypto": require.resolve("crypto-browserify"),
+    //   "stream": require.resolve("stream-browserify")
+    // }
   }
 };
 
