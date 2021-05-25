@@ -9,21 +9,15 @@ const config = {
     filename: 'bundle.js'
   },
   target: 'web',
-  externals: {
-    'crypto': 'crypto',
-  },
   plugins: [
-    new BundleAnalyzerPlugin({
-      analyzerMode: 'static',
-      openAnalyzer: false,
-    })
+    new BundleAnalyzerPlugin({generateStatsFile: true})
   ],
-  resolve: {
-    // fallback: { 
-    //   "crypto": require.resolve("crypto-browserify"),
-    //   "stream": require.resolve("stream-browserify")
-    // }
-  }
+  // resolve: {
+  //   // fallback: { 
+  //   //   "crypto": require.resolve("crypto-browserify"),
+  //   //   "stream": require.resolve("stream-browserify")
+  //   // }
+  // }
 };
 
 module.exports = config;

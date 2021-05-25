@@ -12,12 +12,10 @@
     "build-prod": "webpack --mode production"
   },
   "dependencies": {
-    "@walletconnect/client": "^2.0.0-alpha.38",
-    "add": "^2.0.6",
+    "@walletconnect/client": "^2.0.0-beta.8",
     "crypto-browserify": "^3.12.0",
     "stream-browserify": "^3.0.0",
-    "tslib": "^2.2.0",
-    "yarn": "^1.22.10"
+    "tslib": "^2.2.0"
   },
   "devDependencies": {
     "webpack": "^5.35.1",
@@ -25,7 +23,6 @@
     "webpack-cli": "^4.6.0"
   },
   "resolutions": {
-    "bn.js": "5.2.0",
-    "@pedrouid/iso-crypto": "https://github.com/jmrossy/iso-crypto#f4b764e"
+    "bn.js": "5.2.0"
   }
 }
